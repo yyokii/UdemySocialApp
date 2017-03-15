@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D3ED4B091E795E4D0057376E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B081E795E4D0057376E /* AppDelegate.swift */; };
-		D3ED4B0B1E795E4D0057376E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B0A1E795E4D0057376E /* ViewController.swift */; };
+		D3ED4B0B1E795E4D0057376E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B0A1E795E4D0057376E /* SignInVC.swift */; };
 		D3ED4B0E1E795E4D0057376E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3ED4B0C1E795E4D0057376E /* Main.storyboard */; };
 		D3ED4B101E795E4D0057376E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ED4B0F1E795E4D0057376E /* Assets.xcassets */; };
 		D3ED4B131E795E4D0057376E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3ED4B111E795E4D0057376E /* LaunchScreen.storyboard */; };
+		D3ED4B1B1E795F150057376E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3ED4B1A1E795F150057376E /* GoogleService-Info.plist */; };
+		F2B895E8ED13B7C163E12F72 /* Pods_UdemySocialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A404458EBDF419AD49328482 /* Pods_UdemySocialApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0A43C6B9B86AFACA99D6F9 /* Pods-UdemySocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UdemySocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UdemySocialApp/Pods-UdemySocialApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A404458EBDF419AD49328482 /* Pods_UdemySocialApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UdemySocialApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ED4B051E795E4D0057376E /* UdemySocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdemySocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ED4B081E795E4D0057376E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3ED4B0A1E795E4D0057376E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3ED4B0A1E795E4D0057376E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInVC.swift; path = UdemySocialApp/SignInVC.swift; sourceTree = "<group>"; };
 		D3ED4B0D1E795E4D0057376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3ED4B0F1E795E4D0057376E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3ED4B121E795E4D0057376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3ED4B141E795E4D0057376E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3ED4B1A1E795F150057376E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F570AE94DB1B1459FD52A0BB /* Pods-UdemySocialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UdemySocialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-UdemySocialApp/Pods-UdemySocialApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B895E8ED13B7C163E12F72 /* Pods_UdemySocialApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C420CDCEEA70173430B7BDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A404458EBDF419AD49328482 /* Pods_UdemySocialApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54BF1A47BFA31DA3E8DF7FE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A43C6B9B86AFACA99D6F9 /* Pods-UdemySocialApp.debug.xcconfig */,
+				F570AE94DB1B1459FD52A0BB /* Pods-UdemySocialApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D3ED4AFC1E795E4D0057376E = {
 			isa = PBXGroup;
 			children = (
+				D3ED4B1F1E7966170057376E /* Model */,
+				D3ED4B1E1E79660E0057376E /* View */,
+				D3ED4B1C1E7965F40057376E /* Controller */,
 				D3ED4B071E795E4D0057376E /* UdemySocialApp */,
 				D3ED4B061E795E4D0057376E /* Products */,
+				54BF1A47BFA31DA3E8DF7FE4 /* Pods */,
+				1C420CDCEEA70173430B7BDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +84,35 @@
 			isa = PBXGroup;
 			children = (
 				D3ED4B081E795E4D0057376E /* AppDelegate.swift */,
-				D3ED4B0A1E795E4D0057376E /* ViewController.swift */,
 				D3ED4B0C1E795E4D0057376E /* Main.storyboard */,
 				D3ED4B0F1E795E4D0057376E /* Assets.xcassets */,
 				D3ED4B111E795E4D0057376E /* LaunchScreen.storyboard */,
 				D3ED4B141E795E4D0057376E /* Info.plist */,
+				D3ED4B1A1E795F150057376E /* GoogleService-Info.plist */,
 			);
 			path = UdemySocialApp;
+			sourceTree = "<group>";
+		};
+		D3ED4B1C1E7965F40057376E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3ED4B0A1E795E4D0057376E /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D3ED4B1E1E79660E0057376E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D3ED4B1F1E7966170057376E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3ED4B171E795E4D0057376E /* Build configuration list for PBXNativeTarget "UdemySocialApp" */;
 			buildPhases = (
+				38957DE3EFD5AFB8797E23C3 /* [CP] Check Pods Manifest.lock */,
 				D3ED4B011E795E4D0057376E /* Sources */,
 				D3ED4B021E795E4D0057376E /* Frameworks */,
 				D3ED4B031E795E4D0057376E /* Resources */,
+				E402A291A8E81D558F6F9CF0 /* [CP] Embed Pods Frameworks */,
+				61C138DABCEDED6897F3849A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3ED4B131E795E4D0057376E /* LaunchScreen.storyboard in Resources */,
+				D3ED4B1B1E795F150057376E /* GoogleService-Info.plist in Resources */,
 				D3ED4B101E795E4D0057376E /* Assets.xcassets in Resources */,
 				D3ED4B0E1E795E4D0057376E /* Main.storyboard in Resources */,
 			);
@@ -131,12 +186,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38957DE3EFD5AFB8797E23C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61C138DABCEDED6897F3849A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UdemySocialApp/Pods-UdemySocialApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E402A291A8E81D558F6F9CF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UdemySocialApp/Pods-UdemySocialApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3ED4B011E795E4D0057376E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3ED4B0B1E795E4D0057376E /* ViewController.swift in Sources */,
+				D3ED4B0B1E795E4D0057376E /* SignInVC.swift in Sources */,
 				D3ED4B091E795E4D0057376E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +359,7 @@
 		};
 		D3ED4B181E795E4D0057376E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D0A43C6B9B86AFACA99D6F9 /* Pods-UdemySocialApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UdemySocialApp/Info.plist;
@@ -268,6 +372,7 @@
 		};
 		D3ED4B191E795E4D0057376E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F570AE94DB1B1459FD52A0BB /* Pods-UdemySocialApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UdemySocialApp/Info.plist;
@@ -297,6 +402,7 @@
 				D3ED4B191E795E4D0057376E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
