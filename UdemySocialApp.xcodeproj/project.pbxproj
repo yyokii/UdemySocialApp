@@ -18,6 +18,7 @@
 		D3ED4B261E7A515B0057376E /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B251E7A515B0057376E /* RoundBtn.swift */; };
 		D3ED4B281E7A5EA70057376E /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B271E7A5EA70057376E /* FancyField.swift */; };
 		D3ED4B2A1E7A62810057376E /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B291E7A62810057376E /* FancyBtn.swift */; };
+		D3ED4B2C1E7C0BAD0057376E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B2B1E7C0BAD0057376E /* FeedVC.swift */; };
 		F2B895E8ED13B7C163E12F72 /* Pods_UdemySocialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A404458EBDF419AD49328482 /* Pods_UdemySocialApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		D3ED4B251E7A515B0057376E /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		D3ED4B271E7A5EA70057376E /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		D3ED4B291E7A62810057376E /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		D3ED4B2B1E7C0BAD0057376E /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		F570AE94DB1B1459FD52A0BB /* Pods-UdemySocialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UdemySocialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-UdemySocialApp/Pods-UdemySocialApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D3ED4B0A1E795E4D0057376E /* SignInVC.swift */,
+				D3ED4B2B1E7C0BAD0057376E /* FeedVC.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -269,6 +272,7 @@
 				D3ED4B0B1E795E4D0057376E /* SignInVC.swift in Sources */,
 				D3ED4B261E7A515B0057376E /* RoundBtn.swift in Sources */,
 				D3ED4B091E795E4D0057376E /* AppDelegate.swift in Sources */,
+				D3ED4B2C1E7C0BAD0057376E /* FeedVC.swift in Sources */,
 				D3ED4B241E7A4E990057376E /* Constants.swift in Sources */,
 				D3ED4B211E7A4AEF0057376E /* FancyView.swift in Sources */,
 				D3ED4B2A1E7A62810057376E /* FancyBtn.swift in Sources */,
