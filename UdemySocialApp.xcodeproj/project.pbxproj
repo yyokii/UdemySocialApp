@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32F9A421E7CFE02007E83BD /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32F9A411E7CFE02007E83BD /* PostCell.swift */; };
 		D3ED4B091E795E4D0057376E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B081E795E4D0057376E /* AppDelegate.swift */; };
 		D3ED4B0B1E795E4D0057376E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B0A1E795E4D0057376E /* SignInVC.swift */; };
 		D3ED4B0E1E795E4D0057376E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3ED4B0C1E795E4D0057376E /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		4D0A43C6B9B86AFACA99D6F9 /* Pods-UdemySocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UdemySocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UdemySocialApp/Pods-UdemySocialApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A404458EBDF419AD49328482 /* Pods_UdemySocialApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UdemySocialApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32F9A411E7CFE02007E83BD /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		D3ED4B051E795E4D0057376E /* UdemySocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdemySocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ED4B081E795E4D0057376E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3ED4B0A1E795E4D0057376E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInVC.swift; path = UdemySocialApp/SignInVC.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				D3ED4B271E7A5EA70057376E /* FancyField.swift */,
 				D3ED4B291E7A62810057376E /* FancyBtn.swift */,
 				D3ED4B2D1E7C507D0057376E /* CircleView.swift */,
+				D32F9A411E7CFE02007E83BD /* PostCell.swift */,
 			);
 			name = View;
 			path = ..;
@@ -280,6 +283,7 @@
 				D3ED4B241E7A4E990057376E /* Constants.swift in Sources */,
 				D3ED4B211E7A4AEF0057376E /* FancyView.swift in Sources */,
 				D3ED4B2A1E7A62810057376E /* FancyBtn.swift in Sources */,
+				D32F9A421E7CFE02007E83BD /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D0A43C6B9B86AFACA99D6F9 /* Pods-UdemySocialApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UdemySocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -413,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F570AE94DB1B1459FD52A0BB /* Pods-UdemySocialApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UdemySocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
