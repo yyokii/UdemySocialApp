@@ -19,6 +19,7 @@
 		D3ED4B281E7A5EA70057376E /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B271E7A5EA70057376E /* FancyField.swift */; };
 		D3ED4B2A1E7A62810057376E /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B291E7A62810057376E /* FancyBtn.swift */; };
 		D3ED4B2C1E7C0BAD0057376E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B2B1E7C0BAD0057376E /* FeedVC.swift */; };
+		D3ED4B2E1E7C507D0057376E /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B2D1E7C507D0057376E /* CircleView.swift */; };
 		F2B895E8ED13B7C163E12F72 /* Pods_UdemySocialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A404458EBDF419AD49328482 /* Pods_UdemySocialApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		D3ED4B271E7A5EA70057376E /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		D3ED4B291E7A62810057376E /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		D3ED4B2B1E7C0BAD0057376E /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		D3ED4B2D1E7C507D0057376E /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		F570AE94DB1B1459FD52A0BB /* Pods-UdemySocialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UdemySocialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-UdemySocialApp/Pods-UdemySocialApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				D3ED4B251E7A515B0057376E /* RoundBtn.swift */,
 				D3ED4B271E7A5EA70057376E /* FancyField.swift */,
 				D3ED4B291E7A62810057376E /* FancyBtn.swift */,
+				D3ED4B2D1E7C507D0057376E /* CircleView.swift */,
 			);
 			name = View;
 			path = ..;
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3ED4B2E1E7C507D0057376E /* CircleView.swift in Sources */,
 				D3ED4B281E7A5EA70057376E /* FancyField.swift in Sources */,
 				D3ED4B0B1E795E4D0057376E /* SignInVC.swift in Sources */,
 				D3ED4B261E7A515B0057376E /* RoundBtn.swift in Sources */,
