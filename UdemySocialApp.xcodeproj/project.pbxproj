@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D32F9A421E7CFE02007E83BD /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32F9A411E7CFE02007E83BD /* PostCell.swift */; };
 		D32F9A451E7D188B007E83BD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32F9A441E7D188B007E83BD /* DataService.swift */; };
+		D32F9A471E7D53B1007E83BD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32F9A461E7D53B1007E83BD /* Post.swift */; };
 		D3ED4B091E795E4D0057376E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B081E795E4D0057376E /* AppDelegate.swift */; };
 		D3ED4B0B1E795E4D0057376E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED4B0A1E795E4D0057376E /* SignInVC.swift */; };
 		D3ED4B0E1E795E4D0057376E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3ED4B0C1E795E4D0057376E /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		A404458EBDF419AD49328482 /* Pods_UdemySocialApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UdemySocialApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32F9A411E7CFE02007E83BD /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		D32F9A441E7D188B007E83BD /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D32F9A461E7D53B1007E83BD /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D3ED4B051E795E4D0057376E /* UdemySocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdemySocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ED4B081E795E4D0057376E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3ED4B0A1E795E4D0057376E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInVC.swift; path = UdemySocialApp/SignInVC.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		D3ED4B1F1E7966170057376E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D32F9A461E7D53B1007E83BD /* Post.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3ED4B2E1E7C507D0057376E /* CircleView.swift in Sources */,
+				D32F9A471E7D53B1007E83BD /* Post.swift in Sources */,
 				D3ED4B281E7A5EA70057376E /* FancyField.swift in Sources */,
 				D3ED4B0B1E795E4D0057376E /* SignInVC.swift in Sources */,
 				D3ED4B261E7A515B0057376E /* RoundBtn.swift in Sources */,
