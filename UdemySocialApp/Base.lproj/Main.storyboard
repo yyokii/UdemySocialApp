@@ -149,7 +149,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXR-cC-Qw1" customClass="FancyView" customModule="UdemySocialApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-s7-wAy">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-s7-wAy">
                                         <rect key="frame" x="16" y="16" width="45" height="45"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -157,7 +157,7 @@
                                             <constraint firstAttribute="height" constant="45" id="nNK-Oc-rWJ"/>
                                         </constraints>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="UqM-q5-yyc" appends="YES" id="hcw-2Y-HBb"/>
+                                            <outletCollection property="gestureRecognizers" destination="TVa-rK-QV1" appends="YES" id="fZ0-Fe-qdU"/>
                                         </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqG-Ey-cah">
@@ -182,7 +182,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2xC-Sp-vdH">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="uBe-lm-sgO" customClass="CircleView" customModule="UdemySocialApp" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="uBe-lm-sgO" customClass="CircleView" customModule="UdemySocialApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <gestureRecognizers/>
@@ -208,6 +208,9 @@
                                                     <constraint firstAttribute="height" constant="49" id="Hnu-QF-OQ5"/>
                                                 </constraints>
                                                 <state key="normal" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="WNJ-X0-9eZ" eventType="touchUpInside" id="xf8-DU-ooo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -317,6 +320,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="fXp-oD-Rn2" id="gGF-cr-KWY"/>
+                                            <outlet property="likeImg" destination="tzx-Lt-dGG" id="GJ2-7a-5eL"/>
                                             <outlet property="likesLbl" destination="fq3-aN-Bja" id="KK9-li-og6"/>
                                             <outlet property="postImag" destination="LAG-V5-f9j" id="uq3-4F-v9W"/>
                                             <outlet property="profieImg" destination="3p4-XY-Fst" id="T4R-69-bjQ"/>
@@ -341,15 +345,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="Pmt-aW-jxX" id="j8K-Jd-Meg"/>
                         <outlet property="imageAdd" destination="uBe-lm-sgO" id="tyS-e6-Udl"/>
                         <outlet property="tableView" destination="8vx-w8-Rov" id="hPw-Fj-Zj8"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="fOC-Or-CtS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmd-Qt-JQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="UqM-q5-yyc">
+                <tapGestureRecognizer id="TVa-rK-QV1">
                     <connections>
-                        <action selector="signOutTapped:" destination="WNJ-X0-9eZ" id="Qsf-oM-Yjr"/>
+                        <action selector="signOutTapped:" destination="WNJ-X0-9eZ" id="cbU-b9-v4M"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="j1c-cO-FDc">

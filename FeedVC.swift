@@ -14,8 +14,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageAdd: CircleView!
+    @IBOutlet weak var captionField: FancyField!
     
     var posts = [Post]()
+    var imageSelected = false
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
     
@@ -29,7 +31,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
         tableView.delegate = self
         tableView.dataSource = self
         
+        //.value =  Any new posts or changes to a post
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            
+            self.posts = []
             
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
@@ -39,7 +44,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
                         
                         let key = snap.key
                         let post = Post(postKey: key, postData: postDict)
-                        self.posts.append(post)
+                        //self.posts.append(post)
+                        self.posts.insert(post, at: 0)
                         
                     }
                 }
@@ -66,7 +72,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
             
             if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
                 cell.configureCell(post: post, img: img)
-                return cell
             }
             
             cell.configureCell(post: post)
@@ -80,6 +85,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
         
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
+            imageSelected = true
         } else {
             print("JESS: A valid image wasn't salected")
         }
@@ -91,6 +97,53 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
         
         present(imagePicker, animated: true, completion: nil)
     }
+    @IBAction func postBtnTapped(_ sender: Any) {
+        guard let caption = captionField.text, caption != "" else {
+            print("JESS: Caption must be entered")
+            return
+        }
+        
+        guard let img = imageAdd.image, imageSelected == true else {
+            print("JESS: An image must be selected")
+            return
+        }
+        
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            let imgUid = NSUUID().uuidString
+            let matadata = FIRStorageMetadata()
+            matadata.contentType = "image/jpeg"
+            
+            DataService.ds.REF_POST_IMAGES.child(imgUid).put(imgData, metadata: matadata) { (metadata, error) in
+                if error != nil {
+                    print("JESS: Unable to upload image to Firebasee torage")
+                } else {
+                    print("JESS: Successfully uploaded image to Firebase storage")
+                    let downloadUrl = metadata?.downloadURL()?.absoluteString
+                    if let url = downloadUrl {
+                        self.postToFirebase(imgUrl: url)
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    func postToFirebase (imgUrl: String) {
+        let post: Dictionary<String, AnyObject> = [
+            "caption": captionField.text! as AnyObject,
+            "imageUrl": imgUrl as AnyObject,
+            "likes": 0 as AnyObject,
+            ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        captionField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "add-image")
+        
+    }
+
     
     @IBAction func signOutTapped(_ sender: Any) {
         
@@ -101,3 +154,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
     }
 
 }
+    
+    
+

@@ -199,6 +199,7 @@
 				TargetAttributes = {
 					D3ED4B041E795E4D0057376E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 36FDYZWS56;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -422,6 +423,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 36FDYZWS56;
 				INFOPLIST_FILE = UdemySocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yyokii.UdemySocialApp;
@@ -436,6 +438,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 36FDYZWS56;
 				INFOPLIST_FILE = UdemySocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yyokii.UdemySocialApp;
