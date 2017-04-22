@@ -73,6 +73,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
             if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
                 cell.configureCell(post: post, img: img)
             }
+            cell.configureCell(post: post) //一回いらなくねと思い消す→データ読み込まれない→もとに戻す→できた
             return cell
         } else {
             return PostCell()
